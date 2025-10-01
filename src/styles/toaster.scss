@@ -1,0 +1,14 @@
+@use './variables' as vars;
+
+.toasters {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  .toaster {
+    min-width: 250px;
+    color: vars.$white;
+    background-color: vars.$gray;
+    padding: 10px;
+    margin: 0 0 5px 0;
+  }
+}

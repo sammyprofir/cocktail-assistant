@@ -1,0 +1,18 @@
+{
+  "name": "cocktail-assistant-app",
+  "version": "1.0.0",
+  "description": "Cocktail Assistant Application",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@pionjs/pion": "^1.6.0",
+    "lit-html": "^2.8.0"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.93.2",
+    "vite": "^5.4.20"
+  }
+}

@@ -1,0 +1,56 @@
+@use './variables' as vars;
+
+.grid {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px 0;
+}
+.search {
+  width: 100%;
+  text-align: center;
+  input {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid vars.$black;
+    padding: 10px;
+    margin: 0 0 10px 0;
+  }
+  button {
+    width: 100%;
+    min-height: 37px;
+    padding: 5px 25px;
+  }
+}
+.sidebar {
+  border: 3px solid vars.$black;
+  padding: 15px;
+  .action {
+    text-align: center;
+  }
+}
+.main,
+.sidebar {
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .search {
+    input {
+      margin-bottom: 0;
+    }
+    button {
+      width: auto;
+    }
+  }
+  .main {
+    width: calc(70% - 46px);
+  }
+  .sidebar {
+    width: calc(30% - 46px);
+  }
+}
